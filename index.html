@@ -13,19 +13,16 @@
 </head>
 <body>
 <main class="min-vh-100 p-5">
-    <section class="card p-5 mb-5 d-flex justify-content-center align-content-center">
-        <button type="button" class="btn btn-light" id="inicio">Prueba del 3er ojo</button>
+    <section class="card p-5 mb-5 d-flex justify-content-center align-content-center" id="card_inicial">
+        <button type="button" class="btn btn-light" id="boton_inicio">Prueba del 3er ojo</button>
     </section>
-    <section>
-        <form class="card p-5">
-            <div class="mb-3">
-              <label class="form-label">Adivina el numero magico</label>
-              <input type="text" class="form-control" id="ingreso" aria-describedby="consejo">
+    <section class="visually-hidden" id="card_juego">
+        <form class="card p-5" id="ingreso">
+              <label class="form-label">Adivina el numero magico del 1 al 10</label>
+              <input type="text" class="form-control" id="input_ingreso" aria-describedby="consejo">
               <div id="consejo" class="form-text">Escucha a tu voz interior</div>
-            </div>
-
-            <button type="submit" class="btn btn-light">Adivinar</button>
-          </form>
+              <button type="submit" class="btn btn-light">Adivinar</button>
+        </form>
     </section>
 </main>
 <footer class="bg-dark-subtle container-fluid p-5">
